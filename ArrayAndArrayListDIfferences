@@ -1,0 +1,52 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+
+// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
+// then press Enter. You can now see whitespace characters in your code.
+public class Main {
+    public static void main(String[] args) {
+        // array is fixed
+        // and it can hold
+        int[] randomnumbersArray = new int[6];
+
+        // you can also put the values directly into your arrays
+        int[] randomnumbersArray2 = {3, 76, 8, 342, 4, 43, 123};
+
+        // arrayList however you have to write the real name of the variable, instead of int
+        // you write Integer
+        ArrayList<Integer> randomnumbersArrayList = new ArrayList<>();
+
+        ArrayList<Integer> randomnumbersArrayList2 =
+                new ArrayList<>(Arrays.asList(23, 4, 324, 324, 5));
+
+        // to get a value from Array you specify the index of the value that you want [0] [1] etc
+
+        System.out.println(randomnumbersArray2[1]);
+
+        // to get a value from ArrayList you call it from the method of the index and not directly the index
+
+        System.out.println(randomnumbersArrayList2.get(2));
+
+        // to get the size in array you put .length
+        System.out.println(randomnumbersArray.length);
+
+        // you write method .size for ArrayList
+        System.out.println(randomnumbersArrayList2.size());
+
+        // you cant add element in Array because its fixed, but you could in the end of the ArrayList,
+        randomnumbersArrayList2.add(736674);
+        System.out.println(randomnumbersArrayList2.get(5));
+
+        // how to change the value
+        randomnumbersArray2[0] = 784932759;
+        System.out.println(randomnumbersArray2[0]);
+
+        randomnumbersArrayList2.set(0, 938);
+        System.out.println(randomnumbersArrayList2.get(0));
+
+        // you cant remove element in Array because its fixed, but you could in the ArrayList
+        randomnumbersArrayList2.remove(Integer.valueOf(356));
+        System.out.println(randomnumbersArrayList2);
+    }
+
+}
